@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Michał Roguski</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+<section id="home"></section>
+<!-- MENU -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-example">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo-150.png" alt="" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#home">Strona główna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about-me">O mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Umiejętności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Doświadczenie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Edukacja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- KONIEC MENU -->
+
+<!-- CAROUSEL -->
+<div id="carouselSlides" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images/photo1.jpg" alt="First slide">
+        </div>
+    </div>
+</div>
+<!-- KONIEC CAROUSELA -->
+
+<section id="about-me">
+<div class="container-fluid about-me">
+    <div class="container">
+        <h1>O mnie</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+</section>
+
+<section id="skills"></section>
+<div class="container-fluid skills">
+    <div class="container">
+        <h1>Umiejetnosci</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+
+<section id="experience"></section>
+<div class="container-fluid skills">
+    <div class="container">
+        <h1>Doswiadczenie</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+
+<section id="education"></section>
+<div class="container-fluid skills">
+    <div class="container">
+        <h1>Edukacja</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+
+<section id="portfolio"></section>
+<div class="container-fluid skills">
+    <div class="container">
+        <h1>Portfolio</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+
+<section id="contact"></section>
+<div class="container-fluid skills">
+    <div class="container">
+        <h1>Kontakt</h1>
+        <p>Tekst</p>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+        }
+    });
+</script>
+<script src="js/scrolling-nav.js"></script>
+</body>
+</html>
