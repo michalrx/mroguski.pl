@@ -25,22 +25,22 @@
                     <a class="nav-link" href="#page-top">Strona główna <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-me">O mnie</a>
+                    <a class="nav-link" href="#about-me" id="about-melink">O mnie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Umiejętności</a>
+                    <a class="nav-link" href="#skills" id="skillslink">Umiejętności</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Doświadczenie</a>
+                    <a class="nav-link" href="#experience" id="experiencelink">Doświadczenie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Edukacja</a>
+                    <a class="nav-link" href="#education" id="educationlink">Edukacja</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#portfolio" id="portfoliolink">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Kontakt</a>
+                    <a class="nav-link" href="#contact" id="contactlink">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -109,7 +109,7 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script>
@@ -122,15 +122,15 @@
     });
 </script>
 <script>
-    function goToByScroll(id){
-        // Scroll
-        $('html,body').animate({
-                scrollTop: $("#"+id).offset().top},
-            'slow');
+    function goToByScroll(id){        
+        var elementId = id.replace("link", ""),
+            elementOffset = $("#"+elementId).offset().top;
+            
+            $("html").animate({scrollTop: elementOffset}, 500);
     }
 
     $("#navbarNav > ul > li > a").click(function(e) {
-        // Call the scroll function
+        e.preventDefault();
         goToByScroll($(this).attr("id"));
     });
 </script>
