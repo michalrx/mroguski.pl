@@ -127,7 +127,7 @@
         var elementId = id.replace("link", ""),
             elementOffset = $("#"+elementId).offset().top;
             
-            $("html").animate({scrollTop: elementOffset}, 500);
+            $("html,body").animate({scrollTop: elementOffset}, 500);
     }
 
     $("#navbarNav > ul > li > a").click(function(e) {
