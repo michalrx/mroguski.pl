@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body data-spy="scroll" data-target="#navbar-example">
-<section id="home"></section>
+<body data-spy="scroll" data-target="#navbar-example" id="page-top">
 <!-- MENU -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-example">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo-150.png" alt="" class="logo"></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo-150.png" alt="" class="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Strona główna <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#page-top">Strona główna <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about-me">O mnie</a>
@@ -115,11 +114,26 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script>
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
+        if ($(document).scrollTop() > 300) {
             $('nav').addClass('shrink');
         } else {
             $('nav').removeClass('shrink');
         }
+    });
+</script>
+<script>
+    function goToByScroll(id){
+        // Scroll
+        $('html,body').animate({
+                scrollTop: $("#"+id).offset().top},
+            'slow');
+    }
+
+    $("#navbarNav > ul > li > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
     });
 </script>
 </body>
