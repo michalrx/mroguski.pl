@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+
+}
 
 body {
+    font-family: 'Roboto Condensed', sans-serif;
     position: relative;
 }
 
@@ -87,4 +93,8 @@ nav.navbar.shrink .logo {
 footer {
     background-color: #343a40;
     color: #FFF;
+    min-height: 100px;
 }
+    footer p {
+        text-align: center;
+    }
