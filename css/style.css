@@ -95,6 +95,11 @@ footer {
     color: #FFF;
     min-height: 100px;
 }
-    footer p {
+    footer h5 {
         text-align: center;
+        margin-top: 35px;
+    }
+
+    footer .text-muted {
+        color: #15a8c0 !important;
     }
