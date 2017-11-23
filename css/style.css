@@ -57,7 +57,7 @@ nav.navbar.shrink .logo {
 }
 
     .about-me h1 {
-        padding-top: 100px;
+        padding-top: 85px;
     }
 
 .skills {
@@ -66,29 +66,54 @@ nav.navbar.shrink .logo {
     min-height: 500px;
 }
 
+    .skills h1 {
+        padding-top: 85px;
+    }
+
 .experience {
     background: #15a8c0;
     color: #FFF;
     min-height: 500px;
 }
 
+    .experience h1 {
+        padding-top: 85px;
+    }
+
 .education {
-    background: #15a8c0;
+    background: #15C0A9;
     color: #FFF;
     min-height: 500px;
 }
+
+    .education h1 {
+        padding-top: 85px;
+    }
 
 .portfolio {
-    background: #15a8c0;
+    background: #40E6FF;
     color: #FFF;
     min-height: 500px;
 }
 
+    .portfolio h1 {
+        padding-top: 85px;
+    }
+
 .contact {
-    background: #15a8c0;
+    background: #FFA500;
     color: #FFF;
     min-height: 500px;
 }
+
+    .contact .col-md-6 h1 {
+        padding-top: 75px;
+    }
+
+    .contact .col-md-6 iframe {
+        padding-top: 75px;
+        min-height: 300px;
+    }
 
 footer {
     background-color: #343a40;
