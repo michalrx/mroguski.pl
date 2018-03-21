@@ -43,6 +43,8 @@ nav.navbar{
 nav.navbar.shrink .logo {
     min-height: 60px;
     max-height: 60px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 #home {
